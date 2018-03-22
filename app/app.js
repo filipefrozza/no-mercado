@@ -1,5 +1,5 @@
 APP = 'angular-route-php';
-angular.module(APP, ['ngRoute', 'ngCookies']);
+angular.module(APP, ['ngRoute', 'ngCookies', 'oc.lazyLoad']);
 
 angular.module(APP).
 	config(function($routeProvider, $locationProvider){
@@ -18,6 +18,6 @@ angular.module(APP).
 		  requireBase: false
 		});
 	}).
-	controller('main', function($scope){
+	controller('main', function($scope, $ocLazyLoad){
 		
 	});
