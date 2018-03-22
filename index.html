@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html ng-app="angular-route-php">
+<head>
+	<title>Angular Routes</title>
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.6.7/angular-route.js"></script>
+	<script type="text/javascript" src="https://code.angularjs.org/1.6.7/angular-cookies.js"></script>
+	<!-- Opera Speed Dial Favicon -->
+	<link rel="icon" type="image/png" href="imagens/favicon.png">
+	<!-- Standard Favicon -->
+	<link rel="icon" type="image/x-icon" href="imagens/favicon.png">
+	<!-- For iPhone 4 Retina display: -->
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="imagens/favicon.png">
+	<!-- For iPad: -->
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="imagens/favicon.png">
+	<!-- For iPhone: -->
+	<link rel="apple-touch-icon-precomposed" href="imagens/favicon.png">
+	
+	<script type="text/javascript" src="app/app.js"></script>
+
+	<!-- modulos -->
+	<script src="app/modulo/header/directive.js"></script>
+	<script src="app/modulo/footer/directive.js"></script>
+	<script src="app/modulo/nav/directive.js"></script>
+	<script src="app/modulo/nav/controller.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+	<base href="/angular-route-php/">
+	<meta charset="utf-8">
+</head>
+<body ng-controller="main">
+	<ng-view></ng-view>
+</body>
+</html>

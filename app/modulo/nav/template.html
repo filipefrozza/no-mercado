@@ -1,0 +1,14 @@
+<nav>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li ng-if="!user">
+			<a href="/login">Logar</a>
+		</li>
+		<li ng-if="user">
+			<a href="/pessoas">Pessoas</a>
+		</li>
+		<li ng-if="user">
+			<a href="#" ng-click="logout()">Sair</a>
+		</li>
+	</ul>
+</nav>

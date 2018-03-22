@@ -1,0 +1,13 @@
+#esse htaccess deve ir no root do htdocs do apache, para seu projeto funcionar em subnivel
+
+RewriteEngine On
+# If an existing asset or directory is requested go to it as it is
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
+RewriteRule ^ - [L]
+
+# If the requested resource doesn't exist, use index.html
+#RewriteRule ^ /index.html
+
+#essa é a linha importante pro projeto
+RewriteRule angular-route-php/(.*) angular-route-php/#/$1
