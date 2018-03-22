@@ -1,9 +1,78 @@
-<app-header></app-header>
-<section>
-<div class="container">
-	<div class="row">
-		<h1>Bem Vindo!</h1>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" app-header></nav>
+<app-banner></app-banner>
+
+<section id="about" class="content-section text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 mx-auto">
+				<h2>Sobre Nós</h2>
+				<p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
+					<a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+				<p>This theme features stock photos by
+					<a href="http://gratisography.com/">Gratisography</a>
+					along with a custom Google Maps skin courtesy of
+					<a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
+				<p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
+			</div>
+		</div>
 	</div>
-</div>
 </section>
+
+<section id="download" class="download-section content-section text-center">
+	<div class="container">
+		<div class="col-lg-8 mx-auto">
+			<div class="card-group ajeitar">
+				<div class="card">
+					<div class="circle">
+						<img src="assets/img/job.png" style="margin-left: 10px;">
+					</div>
+					<div class="card-block" style="height: 100px;color:black;">
+						<h4 class="card-title">Profissional</h4>
+						<a class="btn btn-primary" href="visao/form-prof.php">Cadastrar</a>
+						<p class="card-text"><!--TEXTO--></p>
+					</div>
+				</div>
+				<div class="space" style="border:none;">
+
+				</div>
+				<div class="card" style="border:1px solid rgba(0,0,0,.125)">
+					<div class="circle">
+						<img src="assets/img/building.png">
+					</div>
+					<div class="card-block" style="height: 100px;color:black;">
+						<h4 class="card-title">Empresarial</h4>
+						<input type="submit" class="btn btn-primary" value="Cadastrar"></input>
+						<p class="card-text"><!--TEXTO--></p>
+					</div>
+				</div>
+			</div>
+</section>
+
+<section id="contact" class="contato text-center">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 mx-auto">
+				<h2>Entre em contato conosco !</h2>
+				<div class="div-form">
+					<form>
+						<div class="form-group">
+							<label>Nome</label>
+							<input type="text" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>E-mail</label>
+							<input type="email" class="form-control">
+						</div>
+						<div class="form-group">
+							<label>Mensagem</label>
+							<textarea class="form-control"></textarea>
+						</div>
+						<button type="submit" class="btn btn-primary form-control">Enviar</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 <app-footer></app-footer>

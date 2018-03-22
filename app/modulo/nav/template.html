@@ -1,14 +1,20 @@
-<nav>
-	<ul>
-		<li><a href="/">Home</a></li>
-		<li ng-if="!user">
-			<a href="/login">Logar</a>
-		</li>
-		<li ng-if="user">
-			<a href="/pessoas">Pessoas</a>
-		</li>
-		<li ng-if="user">
-			<a href="#" ng-click="logout()">Sair</a>
-		</li>
-	</ul>
-</nav>
+<ul class="navbar-nav ml-auto">
+	<li class="nav-item margin-input">
+		<label>CPF</label>
+		<input type="text" name="cpf/cnpj" class="login">
+	</li>
+	<li class="nav-item margin-input" style="margin-left: 10px;">
+		<label>Senha</label>
+		<input type="text" name="senha" class="login">
+	</li>
+	<li><button class="btn btn-primary" style="width:55px;height: 26px;font-size: 12px;padding: 0;margin-top: 6px;margin-left: 10px;">Entrar</button></li>
+	<li class="nav-item" style="margin-left: 10px;">
+		<a class="nav-link js-scroll-trigger" href="#about">Sobre</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link js-scroll-trigger" href="#download">Cadastro</a>
+	</li>
+	<li class="nav-item">
+		<a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+	</li>
+</ul>
