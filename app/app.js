@@ -10,7 +10,12 @@ angular.module(APP).
 	        })
 			.when('/tabela', {
 				templateUrl: 'app/pagina/tabela/',
-				controller: 'tabela'
+				controller: 'tabela',
+                resolve: {
+                    loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+                        return $ocLazyLoad.load('app/pagina/tabela/controller.js');
+                    }]
+                }
 			})
 			.otherwise({redirectTo: '/'});
 		$locationProvider.html5Mode({
