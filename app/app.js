@@ -17,6 +17,15 @@ angular.module(APP).
                     }]
                 }
 			})
+			.when('/cadastro/:tipo', {
+				templateUrl: 'app/pagina/cadastro/',
+				controller: 'cadastro',
+				resolve: {
+                    loadMyCtrl: ['$ocLazyLoad', function($ocLazyLoad) {
+                        return $ocLazyLoad.load('app/pagina/cadastro/controller.js');
+                    }]
+				}
+			})
 			.otherwise({redirectTo: '/'});
 		$locationProvider.html5Mode({
 		  enabled: true,
@@ -24,5 +33,5 @@ angular.module(APP).
 		});
 	}).
 	controller('main', function($scope, $ocLazyLoad){
-		
+
 	});
